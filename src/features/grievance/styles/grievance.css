@@ -1,0 +1,18 @@
+/* Custom styles for Grievance & Helpdesk Module */
+
+.grievance-sla-badge-critical {
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+.grievance-timeline-connector {
+  position: absolute;
+  top: 1.5rem;
+  bottom: 0;
+  left: 0.875rem;
+  width: 2px;
+  background-color: rgb(229 231 235);
+}
+
+.dark .grievance-timeline-connector {
+  background-color: rgb(55 65 81);
+}

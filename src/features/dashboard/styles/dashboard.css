@@ -1,0 +1,55 @@
+/* Screen 02 - State/Admin Dashboard Custom Styles */
+
+.dashboard-kpi-card {
+  position: relative;
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.dashboard-kpi-card:hover {
+  transform: translateY(-2px);
+}
+
+.map-district-path {
+  transition: fill 0.2s ease, stroke-width 0.2s ease, filter 0.2s ease;
+  cursor: pointer;
+}
+
+.map-district-path:hover {
+  filter: drop-shadow(0 3px 6px rgba(0, 0, 0, 0.18));
+}
+
+.pulse-critical {
+  animation: pulseCritical 2s infinite ease-in-out;
+}
+
+@keyframes pulseCritical {
+  0%, 100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.6;
+    transform: scale(1.15);
+  }
+}
+
+.pulse-badge {
+  box-shadow: 0 0 0 0 rgba(239, 68, 68, 0.7);
+  animation: pulseRings 2s cubic-bezier(0.66, 0, 0, 1) infinite;
+}
+
+@keyframes pulseRings {
+  to {
+    box-shadow: 0 0 0 8px rgba(239, 68, 68, 0);
+  }
+}
+
+.custom-scrollbar-thin::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+.custom-scrollbar-thin::-webkit-scrollbar-thumb {
+  background-color: rgba(148, 163, 184, 0.5);
+  border-radius: 9999px;
+}

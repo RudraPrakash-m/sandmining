@@ -1,0 +1,48 @@
+/* Excavation Management Styles */
+
+.excavation-evidence-frame {
+  position: relative;
+  border-radius: 0.75rem;
+  overflow: hidden;
+  border: 1px solid rgba(226, 232, 240, 0.8);
+  background: linear-gradient(180deg, rgba(248, 250, 252, 0.8) 0%, rgba(241, 245, 249, 0.9) 100%);
+}
+
+.dark .excavation-evidence-frame {
+  border-color: rgba(51, 65, 85, 0.8);
+  background: linear-gradient(180deg, rgba(30, 41, 59, 0.8) 0%, rgba(15, 23, 42, 0.9) 100%);
+}
+
+.excavation-watermark {
+  background: rgba(15, 23, 42, 0.75);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.quota-meter-bar {
+  height: 6px;
+  border-radius: 9999px;
+  background: #e2e8f0;
+  overflow: hidden;
+}
+
+.dark .quota-meter-bar {
+  background: #334155;
+}
+
+.quota-meter-fill {
+  height: 100%;
+  border-radius: 9999px;
+  transition: width 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.excavation-action-btn {
+  width: 1.75rem;
+  height: 1.75rem;
+  border-radius: 9999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.15s ease-in-out;
+}

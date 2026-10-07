@@ -1,0 +1,50 @@
+/* ── Sand Mining GIS Map Custom Styles ── */
+
+@keyframes pulseGlow {
+  0% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(220, 38, 38, 0.7);
+  }
+  70% {
+    transform: scale(1);
+    box-shadow: 0 0 0 8px rgba(220, 38, 38, 0);
+  }
+  100% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(220, 38, 38, 0);
+  }
+}
+
+@keyframes vehiclePulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(37, 99, 235, 0.6);
+  }
+  70% {
+    box-shadow: 0 0 0 7px rgba(37, 99, 235, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(37, 99, 235, 0);
+  }
+}
+
+.gis-alert-marker-pulse {
+  animation: pulseGlow 2s infinite cubic-bezier(0.4, 0, 0.6, 1);
+}
+
+.gis-vehicle-marker-pulse {
+  animation: vehiclePulse 2.5s infinite cubic-bezier(0.4, 0, 0.6, 1);
+}
+
+.gis-svg-container svg {
+  transition: transform 0.25s ease-out;
+}
+
+.gis-interactive-marker {
+  cursor: pointer;
+  transition: transform 0.15s ease-out, filter 0.15s ease-out;
+}
+
+.gis-interactive-marker:hover {
+  transform: scale(1.18);
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3));
+}

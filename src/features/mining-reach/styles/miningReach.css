@@ -1,0 +1,20 @@
+/* Screen 04 - Mining Reach Master Custom Styles */
+
+.reach-geofence-box {
+  background: linear-gradient(135deg, rgba(254, 243, 199, 0.4) 0%, rgba(250, 245, 238, 0.8) 100%);
+  border: 1px dashed rgba(194, 65, 12, 0.35);
+}
+
+.quota-progress-bar {
+  transition: width 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.doc-upload-zone {
+  border: 2px dashed #cbd5e1;
+  transition: all 0.2s ease-in-out;
+}
+
+.doc-upload-zone:hover {
+  border-color: #c2410c;
+  background-color: rgba(255, 237, 213, 0.35);
+}

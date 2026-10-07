@@ -1,0 +1,9 @@
+/* Custom styles for Central Reports & Statutory MIS Module */
+
+.reports-kpi-border {
+  border-left: 4px solid var(--primary, #c2410c);
+}
+
+.reports-tab-active {
+  background: linear-gradient(135deg, rgba(194, 65, 12, 0.1) 0%, rgba(194, 65, 12, 0.02) 100%);
+}

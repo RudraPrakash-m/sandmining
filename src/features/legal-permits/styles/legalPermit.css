@@ -1,0 +1,16 @@
+/* Screen 05 - Legal Mining / Permit & Compliance Custom Styles */
+
+.permit-quota-bar {
+  transition: width 0.4s ease-in-out;
+}
+
+.permit-certificate-box {
+  background: radial-gradient(circle at top left, rgba(254, 243, 199, 0.4), rgba(250, 245, 238, 1));
+  border: 1px solid rgba(194, 65, 12, 0.25);
+}
+
+.inspection-verified-chip {
+  background-color: #ecfdf5;
+  color: #047857;
+  border: 1px solid #a7f3d0;
+}

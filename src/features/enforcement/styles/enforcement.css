@@ -1,0 +1,25 @@
+/* Styles for Enforcement & Anti-Illegal Mining Module */
+
+.enforcement-critical-pulse {
+  animation: pulse 1.8s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+.enforcement-evidence-frame {
+  position: relative;
+  overflow: hidden;
+  border-radius: 0.75rem;
+}
+
+.enforcement-evidence-frame::after {
+  content: "GEOTAGGED EVIDENCE";
+  position: absolute;
+  top: 0.5rem;
+  left: 0.5rem;
+  background-color: rgba(0, 0, 0, 0.75);
+  color: #fff;
+  font-size: 9px;
+  font-weight: 700;
+  padding: 2px 6px;
+  border-radius: 4px;
+  letter-spacing: 0.05em;
+}

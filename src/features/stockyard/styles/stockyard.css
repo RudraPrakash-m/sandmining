@@ -1,0 +1,28 @@
+/* Stockyard Management Custom Styles */
+
+.stock-capacity-pill {
+  height: 6px;
+  border-radius: 9999px;
+  background: #e2e8f0;
+  overflow: hidden;
+}
+
+.dark .stock-capacity-pill {
+  background: #334155;
+}
+
+.stock-capacity-fill {
+  height: 100%;
+  border-radius: 9999px;
+  transition: width 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.stockyard-kpi-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  padding: 0.125rem 0.5rem;
+  border-radius: 9999px;
+  font-size: 0.6875rem;
+  font-weight: 600;
+}

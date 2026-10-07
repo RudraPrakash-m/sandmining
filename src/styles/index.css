@@ -1,0 +1,320 @@
+@import "tailwindcss";
+
+html,
+body {
+    font-family: "Inter", sans-serif;
+}
+
+@theme {
+    /* Fonts */
+    --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+    --font-heading: "Outfit", sans-serif;
+
+    /* Base Colors */
+    --color-background: var(--background);
+    --color-foreground: var(--foreground);
+    --color-muted: var(--muted);
+    --color-muted-foreground: var(--muted-foreground);
+
+    /* Core Action Colors */
+    --color-primary: var(--primary);
+    --color-primary-hover: var(--primary-hover);
+    --color-secondary: var(--secondary);
+    --color-success: var(--success);
+    --color-danger: var(--danger);
+    --color-warning: var(--warning);
+    --color-border-color: var(--border-color);
+    --color-light: var(--color-light-bg);
+    --background-image-primary-gradient: var(--primary-gradient);
+    --background-image-page-gradient: var(--bg-gradient);
+
+    /* Action Buttons Colors */
+    --color-action-primary-bg: var(--action-primary-bg);
+    --color-action-primary-text: var(--action-primary-text);
+    --color-action-success-bg: var(--action-success-bg);
+    --color-action-success-text: var(--action-success-text);
+    --color-action-danger-bg: var(--action-danger-bg);
+    --color-action-danger-text: var(--action-danger-text);
+    --color-action-warning-bg: var(--action-warning-bg);
+    --color-action-warning-text: var(--action-warning-text);
+    --color-action-info-bg: var(--action-info-bg);
+    --color-action-info-text: var(--action-info-text);
+
+    /* Header Specific */
+    /* --color-header-bg: var(--header-bg); */
+    --color-header-text: var(--header-text);
+    --color-header-border: var(--header-border);
+    --color-header-avatar: var(--header-avatar);
+    --background-image-header-bg: var(--header-bg);
+
+
+    /* Sidebar Specific */
+    --color-sidebar-bg: var(--sidebar-bg);
+    --color-sidebar-header: var(--sidebar-header);
+    --color-sidebar-border: var(--sidebar-border);
+    --color-sidebar-hover: var(--sidebar-hover);
+    --color-sidebar-active: var(--sidebar-active);
+    --color-sidebar-text: var(--sidebar-text);
+    --color-sidebar-text-muted: var(--sidebar-text-muted);
+
+    /* Table Specific */
+    --color-table-border: var(--table-border);
+    --color-table-header-bg: var(--table-header-bg);
+    --color-table-header-text: var(--table-header-text);
+    --color-table-row-hover: var(--table-row-hover);
+    --color-table-row-striped: var(--table-row-striped);
+
+    /* Tabs Specific */
+    --color-tab-bg: var(--tab-bg);
+    --color-tab-active: var(--tab-active);
+    --color-tab-text-active: var(--tab-text-active);
+    --color-tab-text-inactive: var(--tab-text-inactive);
+
+    /* Card Specific */
+    --color-card-bg: var(--card-bg);
+    --color-card-border: var(--card-border);
+    --color-card-text: var(--card-text);
+    --color-card-header-bg: var(--card-header-bg);
+    --color-card-header-text: var(--card-header-text);
+    --color-card-header-border: var(--card-header-border);
+    --color-card-icon-bg: var(--card-icon-bg);
+    --color-card-icon-color: var(--card-icon-color);
+
+    /* Form Specific */
+    --color-input-bg: var(--input-bg);
+    --color-input-border: var(--input-border);
+    --color-input-text: var(--input-text);
+
+    /* Modal Specific */
+    --color-modal-header: var(--modal-header);
+    --color-modal-footer: var(--modal-footer);
+}
+
+:root {
+    /* 5 Main Theme Colors */
+    --primary: #C2410C;
+    --primary-hover: #9a3412;
+    --primary-gradient: linear-gradient(231.7deg, #ea580c 30.62%, #c2410c 96.67%);
+    --bg-gradient: linear-gradient(206.67deg, #ffe9e9 19.08%, #d3daff 81.82%);
+    --secondary: #64748b;
+    --success: #10b981;
+    --danger: #ef4444;
+    --warning: #f59e0b;
+    --border-color: #e5e7eb;
+    --color-light-bg: #f8fafc;
+
+    /* Base Layout Colors */
+    --background: #F4F6F9;
+    --foreground: #0f172a;
+    --muted: #64748b;
+    --muted-foreground: #94a3b8;
+
+    /* Map layout elements directly to Sand Mining theme */
+    --sidebar-bg: #FAF5EE;
+    --sidebar-header: #431407;
+    --sidebar-border: rgba(120, 53, 15, 0.15);
+    --sidebar-hover: rgba(255, 255, 255, 0.8);
+    --sidebar-active: #C2410C;
+    --sidebar-text: #0f172a;
+    --sidebar-text-muted: #78350f;
+    /* headerbg-new */
+    --header-bg: linear-gradient(
+      90deg,
+      #efe1d3 0%,
+      #f7eee6 45%,
+      #fbf8f5 75%,
+      #ffffff 100%
+    );
+
+
+    --header-text: #111827;
+    --header-border: #e5e7eb;
+    --header-avatar: var(--primary);
+
+    --card-bg: #ffffff;
+    --card-border: rgba(120, 53, 15, 0.12);
+    --card-text: #0f172a;
+    --card-header-bg: transparent;
+    --card-header-text: #0f172a;
+    --card-header-border: rgba(120, 53, 15, 0.12);
+    --card-icon-bg: transparent;
+    --card-icon-color: var(--primary);
+
+    --modal-header: var(--primary);
+    --modal-footer: #FAF5EE;
+
+    /* Input & Table Configurations */
+    --input-bg: #ffffff;
+    --input-border: #e2e8f0;
+    --input-text: #0f172a;
+
+    --table-border: rgba(120, 53, 15, 0.12);
+    --table-header-bg: #FAF5EE;
+    --table-header-text: #431407;
+    --table-row-hover: #FAF7F2;
+    --table-row-striped: #FAF9F7;
+
+    --tab-bg: #FAF5EE;
+    --tab-active: #ffffff;
+    --tab-text-active: var(--primary);
+    --tab-text-inactive: var(--secondary);
+
+    /* Action Button Colors (Light Mode) */
+    --action-primary-bg: #ffedd5;
+    --action-primary-text: #c2410c;
+    --action-success-bg: #dcfce7;
+    --action-success-text: #16a34a;
+    --action-danger-bg: #fee2e2;
+    --action-danger-text: #dc2626;
+    --action-warning-bg: #FAF6E8;
+    --action-warning-text: #D4AF37;
+    --action-info-bg: #F3F4F6;
+    --action-info-text: #4B5563;
+}
+
+.dark {
+    color-scheme: dark;
+    /* Dark Mode Overrides */
+    --background: #0f172a;
+    --foreground: #f8fafc;
+    --muted: #94a3b8;
+    --muted-foreground: #64748b;
+    --border-color: #374151;
+    --color-light-bg: #1e293b;
+
+    --header-bg: #1e293b;
+    --header-text: #f1f5f9;
+    --header-border: #334155;
+
+    --card-bg: rgba(30, 41, 59, 0.6);
+    --card-border: #334155;
+    --card-text: #f1f5f9;
+    --card-header-bg: transparent;
+    --card-header-text: #f1f5f9;
+    --card-header-border: #334155;
+    --card-icon-bg: transparent;
+    --card-icon-color: #38bdf8;
+
+    --input-bg: #1e293b;
+    --input-border: #475569;
+    --input-text: #f1f5f9;
+
+    --sidebar-bg: #1e293b;
+    --sidebar-header: #1e293b;
+    --sidebar-border: #334155;
+    --sidebar-text: #f1f5f9;
+    --sidebar-text-muted: #94a3b8;
+    --sidebar-hover: #334155;
+    --sidebar-active: #1e293b;
+
+    --table-border: #334155;
+    --table-header-bg: #1e293b;
+    --table-header-text: #f1f5f9;
+    --table-row-hover: #1e293b;
+    --table-row-striped: #162031;
+
+    --tab-bg: #1e293b;
+    --tab-active: #0f172a;
+    --tab-text-inactive: #94a3b8;
+
+    --modal-footer: #1e293b;
+
+    /* Action Button Colors (Dark Mode) */
+    --action-primary-bg: rgba(194, 65, 12, 0.2);
+    --action-primary-text: #fb923c;
+    --action-success-bg: rgba(22, 163, 74, 0.2);
+    --action-success-text: #4ade80;
+    --action-danger-bg: rgba(220, 38, 38, 0.2);
+    --action-danger-text: #f87171;
+    --action-warning-bg: rgba(202, 138, 4, 0.2);
+    --action-warning-text: #fbbf24;
+    --action-info-bg: rgba(147, 51, 234, 0.2);
+    --action-info-text: #c084fc;
+}
+
+@layer base {
+    body {
+        background-color: var(--background);
+        min-height: 100vh;
+        @apply text-foreground transition-colors duration-300;
+    }
+
+    .dark body {
+        background-color: #0f172a;
+    }
+}
+
+.dark input[type="date"],
+.dark input[type="datetime-local"],
+.dark input[type="time"] {
+    color-scheme: dark;
+    border: 1px solid var(--input-border);
+    background-color: var(--input-bg);
+    color: var(--input-text);
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator,
+input[type="datetime-local"]::-webkit-calendar-picker-indicator,
+input[type="time"]::-webkit-calendar-picker-indicator {
+    opacity: 0;
+    display: block;
+    width: 2rem;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    pointer-events: none;
+    width: 0;
+    height: 0;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+button {
+    cursor: pointer;
+}
+
+/* DreamsIoT Card & Heading Specifications */
+.preview-card {
+    background-color: #ffffff;
+    border: 1px solid rgba(120, 53, 15, 0.12);
+    border-radius: 0.75rem;
+    padding: 1.25rem;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+    transition: all 0.2s ease;
+}
+
+.dark .preview-card {
+    background-color: #1e293b;
+    border-color: #334155;
+}
+
+.preview-card-header {
+    padding-bottom: 1rem;
+    margin-bottom: 1.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    border-bottom: 1px solid rgba(120, 53, 15, 0.1);
+}
+
+.dark .preview-card-header {
+    border-bottom-color: #334155;
+}
+
+.preview-card-title {
+    color: #0f172a;
+    font-size: 1.125rem;
+    font-weight: 700;
+    margin-bottom: 0;
+    line-height: 1.25;
+}
+
+.dark .preview-card-title {
+    color: #f8fafc;
+}

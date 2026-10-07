@@ -1,0 +1,6 @@
+/* Custom styling for User, Role & Access Management Module */
+
+.user-permission-pill {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  letter-spacing: 0.03em;
+}

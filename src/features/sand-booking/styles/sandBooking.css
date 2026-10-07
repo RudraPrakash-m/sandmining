@@ -1,0 +1,16 @@
+/* Online Sand Booking Custom Styles */
+
+.booking-tariff-card {
+  background: linear-gradient(135deg, rgba(254, 243, 199, 0.3) 0%, rgba(250, 245, 238, 0.7) 100%);
+  border: 1px solid rgba(194, 65, 12, 0.2);
+}
+
+.booking-step-active {
+  background-color: #c2410c;
+  color: #ffffff;
+  box-shadow: 0 0 0 3px rgba(194, 65, 12, 0.2);
+}
+
+.stock-indicator-pill {
+  transition: all 0.2s ease-in-out;
+}

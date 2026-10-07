@@ -1,0 +1,29 @@
+/* Custom styling for Field Officer Mobile Terminal Demo Interface */
+
+.field-officer-device-frame {
+  max-width: 480px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 1.5rem;
+  box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+  overflow: hidden;
+}
+
+.field-scanner-laser {
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #ef4444, transparent);
+  box-shadow: 0 0 8px #ef4444;
+  animation: scanLaser 2s ease-in-out infinite alternate;
+}
+
+@keyframes scanLaser {
+  0% {
+    top: 10%;
+  }
+  100% {
+    top: 90%;
+  }
+}
